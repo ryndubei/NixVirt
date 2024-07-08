@@ -368,6 +368,7 @@ let
                   (subelem "source" [ ] [ addresselem ])
                   (subelem "boot" [ (subattr "order" typeInt) ] [ ])
                   addresselem
+                  (subelem "rom" [ (subattr "bar" typeBoolOnOff) (subattr "file" typePath) (subattr "enabled" typeBoolYesNo) ] [ ])
                 ]
               )
               (subelem "shmem"
