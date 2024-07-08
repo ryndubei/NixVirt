@@ -365,7 +365,12 @@ let
                 ]
                 [
                   (subelem "driver" [ (subattr "name" typeString) (subattr "model" typeString) ] [ ])
-                  (subelem "source" [ ] [ addresselem ])
+                  (subelem "source" [ ]
+                    [
+                      addresselem
+                      (subelem "vendor" [ (subattr "id" typeInt) ] [ ])
+                      (subelem "product" [ (subattr "id" typeInt) ] [ ])
+                    ])
                   (subelem "boot" [ (subattr "order" typeInt) ] [ ])
                   addresselem
                   (subelem "rom" [ (subattr "bar" typeBoolOnOff) (subattr "file" typePath) (subattr "enabled" typeBoolYesNo) ] [ ])
