@@ -316,6 +316,8 @@ let
                         (subattr "cache" typeString)
                         (subattr "io" typeString)
                         (subattr "discard" typeString)
+                        (subattr "iothread" typeInt)
+                        (subattr "queues" typeInt)
                       ] [ ]
                     )
                   ] ++
