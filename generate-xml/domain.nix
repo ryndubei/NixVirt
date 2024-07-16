@@ -367,7 +367,7 @@ let
                 ]
                 [
                   (subelem "driver" [ (subattr "name" typeString) (subattr "model" typeString) ] [ ])
-                  (subelem "source" [ ]
+                  (subelem "source" [ (subattr "startupPolicy" typeString) ]
                     [
                       addresselem
                       (subelem "vendor" [ (subattr "id" typeInt) ] [ ])
